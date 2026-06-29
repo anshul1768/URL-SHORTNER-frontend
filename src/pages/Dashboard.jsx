@@ -243,7 +243,7 @@ const Dashboard = () => {
                       </a>
                       <button
   onClick={() =>
-    setQrUrl(`http://localhost:8000/${url.short_url}`)
+    setQrUrl(`${url.full_url}`)
   }
   className="text-yellow-400 hover:text-yellow-300 transition"
   title="QR Code"
