@@ -206,12 +206,12 @@ const Dashboard = () => {
                   <td className="p-4">
 
                     <a
-                      href={`http://localhost:8000/${url.short_url}`}
+                      href={`${import.meta.env.VITE_BACKEND_URL}/${url.short_url}`}
                       target="_blank"
                       rel="noreferrer"
                       className="text-cyan-400 hover:underline"
                     >
-                      {`http://localhost:8000/${url.short_url}`}
+                     {`${import.meta.env.VITE_BACKEND_URL}/${url.short_url}`}
                     </a>
 
                   </td>
@@ -233,7 +233,7 @@ const Dashboard = () => {
                       </button>
 
                       <a
-                        href={`http://localhost:8000/${url.short_url}`}
+                        href={`${import.meta.env.VITE_BACKEND_URL}/${url.short_url}`}
                         target="_blank"
                         rel="noreferrer"
                         className="text-green-400 transition hover:scale-110 hover:text-green-300"
