@@ -45,8 +45,9 @@ const Dashboard = () => {
   );
 
   const handleCopy = async (shortUrl) => {
-    const link =`${import.meta.env.VITE_BACKEND_URL}/${url.short_url}`;
-
+    const link =`${import.meta.env.VITE_BACKEND_URL}/${shortUrl}`;
+    // const link='http://jsiox.losp.posn';
+    console.log(link);
     await navigator.clipboard.writeText(link);
 
     // alert("✅ Link copied successfully!");
