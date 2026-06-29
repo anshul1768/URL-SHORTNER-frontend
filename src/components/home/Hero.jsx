@@ -34,7 +34,8 @@ const Hero = () => {
       setUrl("");
     } catch (error) {
       console.log(error);
-      alert("Something went wrong");
+      // alert("Something went wrong");
+      toast.error("Something went wrong");
     } finally {
       setLoading(false);
     }

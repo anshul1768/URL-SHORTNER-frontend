@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Features from "./pages/Features";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/common/ProtectedRoutes";
+import Analytics from "./pages/Analytics";
 function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-white flex flex-col">
@@ -28,7 +29,7 @@ function App() {
 
           <Route path="/features" element={<Features />} />
 
-          <Route element={<DashboardLayout />}>
+          {/* <Route element={<DashboardLayout />}>
   <Route
     path="/dashboard"
     element={
@@ -37,6 +38,17 @@ function App() {
       </ProtectedRoute>
     }
   />
+</Route> */}
+<Route
+  element={
+    <ProtectedRoute>
+      <DashboardLayout />
+    </ProtectedRoute>
+  }
+>
+  <Route path="/dashboard" element={<Dashboard />} />
+  <Route path="/dashboard" element={<Dashboard />} />
+  <Route path="/analytics/:id" element={<Analytics />} />
 </Route>
 
           <Route path="*" element={<NotFound />} />
