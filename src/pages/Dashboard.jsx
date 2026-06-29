@@ -45,7 +45,7 @@ const Dashboard = () => {
   );
 
   const handleCopy = async (shortUrl) => {
-    const link = `http://localhost:8000/${shortUrl}`;
+    const link =`${import.meta.env.VITE_BACKEND_URL}/${url.short_url}`;
 
     await navigator.clipboard.writeText(link);
 
