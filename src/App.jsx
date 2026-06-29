@@ -5,7 +5,7 @@ import Footer from "./components/layout/Footer";
 import DashboardLayout from "./components/dashboard/DashboardLayout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import Signup from "./pages/SignUp.jsx";
 import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
 import Features from "./pages/Features";
