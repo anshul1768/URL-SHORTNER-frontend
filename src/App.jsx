@@ -12,6 +12,7 @@ import Features from "./pages/Features";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/common/ProtectedRoutes";
 import Analytics from "./pages/Analytics";
+import MyUrls from "./components/dashboard/MyUrls.jsx";
 function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-white flex flex-col">
@@ -46,9 +47,10 @@ function App() {
     </ProtectedRoute>
   }
 >
-  <Route path="/dashboard" element={<Dashboard />} />
+  <Route path="/urls" element={<MyUrls />} />
   <Route path="/dashboard" element={<Dashboard />} />
   <Route path="/analytics/:id" element={<Analytics />} />
+  
 </Route>
 
           <Route path="*" element={<NotFound />} />
