@@ -239,6 +239,9 @@ const Dashboard = () => {
                         rel="noreferrer"
                         className="text-green-400 transition hover:scale-110 hover:text-green-300"
                         title="Open"
+                        onClick={()=>{
+                          fetchUrls();
+                        }}
                       >
                         <FaExternalLinkAlt />
                       </a>
