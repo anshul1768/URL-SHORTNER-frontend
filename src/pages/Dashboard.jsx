@@ -211,6 +211,9 @@ const Dashboard = () => {
                       target="_blank"
                       rel="noreferrer"
                       className="text-cyan-400 hover:underline"
+                      onClick={()=>{
+                        fetchUrls();
+                      }}
                     >
                      {`${import.meta.env.VITE_BACKEND_URL}/${url.short_url}`}
                     </a>
